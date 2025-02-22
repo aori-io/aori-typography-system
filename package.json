@@ -1,6 +1,6 @@
 {
   "name": "@aori/fonts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aori Font System",
   "main": "dist/css/index.css",
   "style": "dist/css/index.css",
