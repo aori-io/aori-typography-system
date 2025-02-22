@@ -1,1 +1,33 @@
- 
+{
+  "name": "@aori/fonts",
+  "version": "1.0.0",
+  "description": "Aori Font System",
+  "main": "dist/css/index.css",
+  "style": "dist/css/index.css",
+  "files": [
+    "dist/**/*",
+    "tailwind.preset.js"
+  ],
+  "exports": {
+    ".": "./dist/css/index.css",
+    "./css": "./dist/css/index.css",
+    "./fonts": "./dist/fonts/",
+    "./fonts/variable": "./dist/fonts/variable/",
+    "./fonts/static": "./dist/fonts/static/",
+    "./tailwind": "./tailwind.preset.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["font", "typography", "aori"],
+  "author": "Aori",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aori-io/aori-typography-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aori-io/aori-typography-system/issues"
+  },
+  "homepage": "https://github.com/aori-io/aori-typography-system#readme"
+} 
