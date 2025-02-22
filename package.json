@@ -1,7 +1,7 @@
 {
-  "name": "aori-fonts",
+  "name": "@aori/fonts",
   "version": "1.0.0",
-  "description": "Aori Typography System - A modern, versatile font system",
+  "description": "Aori Font System",
   "main": "dist/css/index.css",
   "style": "dist/css/index.css",
   "files": [
@@ -19,12 +19,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [
-    "font",
-    "typography",
-    "aori",
-    "design-system"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+  "keywords": ["font", "typography", "aori"],
+  "author": "Aori",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aori-io/aori-typography-system.git"
+  },
+  "homepage": "https://github.com/aori-io/aori-typography-system#readme"
 } 
