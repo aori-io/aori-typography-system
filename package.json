@@ -1,0 +1,30 @@
+{
+  "name": "aori-fonts",
+  "version": "1.0.0",
+  "description": "Aori Typography System - A modern, versatile font system",
+  "main": "dist/css/index.css",
+  "style": "dist/css/index.css",
+  "files": [
+    "dist/**/*",
+    "tailwind.preset.js"
+  ],
+  "exports": {
+    ".": "./dist/css/index.css",
+    "./css": "./dist/css/index.css",
+    "./fonts": "./dist/fonts/",
+    "./fonts/variable": "./dist/fonts/variable/",
+    "./fonts/static": "./dist/fonts/static/",
+    "./tailwind": "./tailwind.preset.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "font",
+    "typography",
+    "aori",
+    "design-system"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 
