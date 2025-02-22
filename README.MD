@@ -8,7 +8,6 @@
 
 This repository contains the official Aori typography system fonts for use in web apps and marketing materials.
 
-
 ## Installation
 
 The official Aori typography system can be easily imported for use in frontend frameworks like Next.js, React, and Vue.
@@ -103,4 +102,8 @@ module.exports = nextConfig;
 
 ## License
 
-MIT © Aori
+See [LICENSE](https://github.com/aori-io/aori-typography-system/blob/main/LICENSE.MD) for details.
+
+## Repository Layout
+
+This font repository structure is inspired by [Unified Font Repository v0.3](https://github.com/unified-font-repository/Unified-Font-Repository).
