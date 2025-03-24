@@ -23,6 +23,30 @@ yarn add @aori/fonts
 
 ## Usage
 
+### Next.js Pages Router Integration
+
+For Next.js apps using the Pages Router, import the font in your `_app.tsx` file:
+
+```jsx
+// pages/_app.tsx
+import { AoriSans } from '@aori/fonts/font/sans';
+import { AoriMono } from '@aori/fonts/font/mono';
+
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <style jsx global>{`
+        :root {
+          --font-aori-sans: ${AoriSans.style.fontFamily};
+          --font-aori-mono: ${AoriMono.style.fontFamily};
+        }
+      `}</style>
+      <Component {...pageProps} />
+    </>
+  );
+}
+```
+
 ### Basic Font Import
 
 Import the fonts in your root layout or app component:
@@ -53,6 +77,7 @@ Add this to your next.config.js:
 ```typescript
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // This is needed for font file loading
   webpack(config) {
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -60,6 +85,9 @@ const nextConfig = {
     });
     return config;
   },
+  
+  // Required for Next.js versions older than 15 to work with this package
+  transpilePackages: ["@aori/fonts"],
 };
 
 module.exports = nextConfig;
@@ -103,7 +131,7 @@ module.exports = nextConfig;
 ## License
 
 See [LICENSE](https://github.com/aori-io/aori-typography-system/blob/main/LICENSE.MD) for details.
-
 ## Repository Layout
 
 This font repository structure is inspired by [Unified Font Repository v0.3](https://github.com/unified-font-repository/Unified-Font-Repository).
+

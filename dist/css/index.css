@@ -1,16 +1,7 @@
-/* Variable font */
+/* Static fonts */
 @font-face {
   font-family: 'Aori';
-  src: url('../fonts/variable/Aori-[wght].woff2') format('woff2-variations');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Static fonts (fallback) */
-@font-face {
-  font-family: 'Aori';
-  src: url('../fonts/static/Aori-Regular.woff2') format('woff2');
+  src: url('../fonts/static/AoriSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,8 +9,32 @@
 
 @font-face {
   font-family: 'Aori';
-  src: url('../fonts/static/Aori-Bold.woff2') format('woff2');
+  src: url('../fonts/static/AoriSans-Bold.woff2') format('woff2');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aori';
+  src: url('../fonts/static/AoriSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aori';
+  src: url('../fonts/static/AoriSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AoriMono';
+  src: url('../fonts/static/AoriMono-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

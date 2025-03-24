@@ -1,20 +1,20 @@
 {
   "name": "@aori/fonts",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Aori Font System",
   "main": "dist/css/index.css",
   "style": "dist/css/index.css",
-  "files": [
-    "dist/**/*",
-    "tailwind.preset.js"
-  ],
+  "types": "index.d.ts",
+  "files": ["dist/**/*", "src/**/*", "tailwind.preset.js", "index.d.ts"],
   "exports": {
     ".": "./dist/css/index.css",
     "./css": "./dist/css/index.css",
     "./fonts": "./dist/fonts/",
-    "./fonts/variable": "./dist/fonts/variable/",
     "./fonts/static": "./dist/fonts/static/",
-    "./tailwind": "./tailwind.preset.js"
+    "./tailwind": "./tailwind.preset.js",
+    "./font/sans": "./src/font/sans/sans.js",
+    "./font/mono": "./src/font/mono/mono.js",
+    "./font": "./src/font/index.js"
   },
   "publishConfig": {
     "access": "public"
@@ -26,5 +26,8 @@
     "type": "git",
     "url": "git+https://github.com/aori-io/aori-typography-system.git"
   },
-  "homepage": "https://github.com/aori-io/aori-typography-system#readme"
-} 
+  "homepage": "https://github.com/aori-io/aori-typography-system#readme",
+  "peerDependencies": {
+    "next": ">=13.0.0"
+  }
+}
