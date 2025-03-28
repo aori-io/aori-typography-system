@@ -1,20 +1,29 @@
 {
   "name": "@aori/fonts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Aori Font System",
   "main": "dist/css/index.css",
   "style": "dist/css/index.css",
-  "types": "index.d.ts",
-  "files": ["dist/**/*", "src/**/*", "tailwind.preset.js", "index.d.ts"],
+  "types": "src/types/aori__fonts.d.ts",
+  "files": ["dist/**/*", "src/**/*", "tailwind.preset.js"],
   "exports": {
     ".": "./dist/css/index.css",
     "./css": "./dist/css/index.css",
     "./fonts": "./dist/fonts/",
     "./fonts/static": "./dist/fonts/static/",
     "./tailwind": "./tailwind.preset.js",
-    "./font/sans": "./src/font/sans/sans.js",
-    "./font/mono": "./src/font/mono/mono.js",
-    "./font": "./src/font/index.js"
+    "./font/sans": {
+      "types": "./src/types/aori__fonts.d.ts",
+      "default": "./src/font/sans/sans.js"
+    },
+    "./font/mono": {
+      "types": "./src/types/aori__fonts.d.ts",
+      "default": "./src/font/mono/mono.js"
+    },
+    "./font": {
+      "types": "./src/types/aori__fonts.d.ts",
+      "default": "./src/font/index.js"
+    }
   },
   "publishConfig": {
     "access": "public"
